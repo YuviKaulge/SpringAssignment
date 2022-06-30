@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- public Questions(String questionId, String question, List<String> answers) {
+		super();
+		this.questionId = questionId;
+		this.question = question;
+		this.answers = answers;
+	} -->
+
+<bean id = "question" class="question2.Questions">
+	<constructor-arg name="questionId" value="1011"/>
+	<constructor-arg name="question" value="Your Full name"/>
+	<constructor-arg>
+	 	<list>
+	        <value>Yuvraj</value>  
+	        <value>Kaulage</value>  
+	        <value>I'm From Omerga</value>
+	   </list>
+	</constructor-arg>
+	
+
+</bean>
+<bean id = "question1" class="question2.Questions">
+ 		<constructor-arg  value = "1012" />
+        <constructor-arg  value = "Current Working company" />
+   	    <constructor-arg>
+	    <set>
+	        <value>Working In Capgemini Company</value>  
+	        <value>Location Mumbai Airoli</value>  
+	        <value>Capgemini Is Best Company </value>
+	    </set>
+    	</constructor-arg>
+</bean>
+<bean id = "question2" class="question2.Questions">
+		<constructor-arg  value = "103" />
+        <constructor-arg  value = "What is Spring ?" />
+		<constructor-arg>
+		    <map>
+		        <entry key="1" value="Spring core is a part of Spring Framework" ></entry >  
+		        <entry key="2" value="Spring is one type of a Season" ></entry >  
+		        <entry key ="3" value="Spring is one type of material which jumps high "></entry>
+		    </map>
+		</constructor-arg>
+
+</bean>
+
+</beans>
