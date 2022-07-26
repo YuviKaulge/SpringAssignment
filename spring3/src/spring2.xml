@@ -5,10 +5,10 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
         
   <bean id="bankaccount" class="autowiring_xml.BankAccount">
- <property name="accountId" value="4653767778676"></property>
-  <property name="accountHolderName" value="Pooja"></property>
-  <property name="accountType" value="Savings"></property>
-   <property name="accountBalance" value="30000"></property>
+ <property name="accountId" value="7758876576"></property>
+  <property name="accountHolderName" value="yuvi"></property>
+  <property name="accountType" value="current"></property>
+   <property name="accountBalance" value="100"></property>
   </bean>   
     
  <bean id="bankcontroller" class="autowiring_xml.BankAccountController">
